@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Apercu Regular';
+  src: url('/fonts/apercu-regular.woff2') format('woff2'), url('/fonts/apercu-regular.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
+  unicode-range: U+20-7E,U+A0-FF,U+20AC;
+}
+
+@font-face {
+  font-family: 'Apercu Bold';
+  src: url('/fonts/apercu-bold.woff2') format('woff2'), url('/fonts/apercu-bold.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
+  unicode-range: U+20-7E,U+A0-FF,U+20AC;
+}
+
+
+:root {
+  --font-base: 'Apercu Regular', sans-serif;
+  --font-bold: 'Apercu Bold', sans-serif;
+
+  --unit-medium: 20px;
+  --unit-large: 30px;
+  --unit-xlarge: 60px;
+
+  --max-width-small: 600px;
+  --max-width-large: 1200px;
+
+  --color-primary: darkseagreen;
+  --color-text-dark: black;
+  --color-text-light: white;
+}
+
+*, 
+*:before, 
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* this causes you to put pixels easily in rem - 24px = 2.4rem */
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-base);
+  font-size: 1.8rem;
+  line-height: 1.7em;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.h3 {
+  font-family: var(--font-bold);
+  font-size: 5rem;
+  line-height: 1.2em;
+}
+
+.h4 {
+  font-family: var(--font-bold);
+  font-size: 3rem;
+  line-height: 1.2em;
+}
